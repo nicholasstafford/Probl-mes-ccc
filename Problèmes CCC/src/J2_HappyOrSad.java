@@ -19,15 +19,16 @@ public class J2_HappyOrSad
 					{
 						if(message.charAt(i + 2) == ')')
 						{
-							counter ++;
+							counter++;
 							isThere = true;
 						}
 						else if(message.charAt(i + 2) == '(')
 						{
-							counter --;
+							counter--;
 							isThere = true;
 						}
 					}
+				}
 					if(counter > 0)
 					{
 						System.out.println("happy");
@@ -44,7 +45,8 @@ public class J2_HappyOrSad
 					{
 						System.out.println("none");
 					}
+					sc.close();
 				}
 			}
 
-	}
+	
